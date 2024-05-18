@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;      
+      height: 100vh;
+     
+        background: linear-gradient(to bottom right, #507bf3, #07276d);
+    }
+    
+    
+
+    .container {
+      width: 400px;
+      margin: auto;
+      padding: 30px;
+     
+      border-radius: 10px;
+      background: linear-gradient(to bottom right, #a7bdf7, #4d74c9); 
+
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 90%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #0c60ce;
+      color: #e9e4e4;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #3d99f0;
+    }
+
+    .form-group .switch-form-link {
+      display: block;
+      text-align: center;
+      color: #fffafa;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .form-group .switch-form-link:hover{
+      color: #061e50;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="login-form-div">
+
+    <div class="container">
+     
+        <form id="login-form">
+          <h1>Login</h1>  
+          <div class="form-group">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+          <div class="form-group">
+            <p class="switch-form-link" id="switch-to-register">Don't have an account? Register here</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="register-form-div">
+      <div class="container" style="margin-top: 0px;">
+        
+        <form id="register-form">
+          <h1>Registration</h1>  
+          <div class="form-group">
+            <label for="register-name">Name:</label>
+            <input type="text" id="register-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Register</button>
+          </div>
+          <div class="form-group">
+            <p class="switch-form-link" id="switch-to-login">Already have an account? Login here</p>
+          </div>
+        </form>
+      </div>
+      
+  </div>  
+  
+
+ 
+</body>
+
+<script>
+    // Hide the login form on page load
+    window.addEventListener('DOMContentLoaded', () => {
+       registerForm.style.display = 'none';
+    });
+  
+    // Switching between login and registration forms
+    const loginForm = document.getElementById('login-form-div');
+    const registerForm = document.getElementById('register-form-div');
+    const switchToRegisterLink = document.getElementById('switch-to-register');
+    const switchToLoginLink = document.getElementById('switch-to-login');
+  
+    switchToRegisterLink.addEventListener('click', () => {
+      loginForm.style.display = 'none';
+      registerForm.style.display = 'block';
+    });
+  
+    switchToLoginLink.addEventListener('click', () => {
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+    });
+  
+    
+    const hasExistingAccount = false;  
+  
+    if (hasExistingAccount) {
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+    }
+  </script>
+</html>
