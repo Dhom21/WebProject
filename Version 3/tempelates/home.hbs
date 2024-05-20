@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+   
+</head>
+<body>
+    <div class="header">
+        <h1>Hi {{message}}</h1>
+        <h4>Your Last Score: {{UserScore}}</h4>
+        <h4>Users Best Score: {{MaxScore}}</h4>
+        <a href="/login">logout</a> 
+         
+    </div>
+
+    <div class="container">
+        <div class="board">
+
+         <div class="img_container"> <img id="i1" src="/img/login/q1.jpg" alt=""> </div>
+         <div class="img_container"><img  id="i2" src="/img/login/q1.jpg" alt=""></div>
+         <div class="img_container"><img  id="i3" src="/img/login/q1.jpg" alt=""></div>
+         <div class="img_container"><img  id="i4"src="/img/login/q1.jpg" alt=""></div>
+
+        </div>
+
+     <div class="answers">
+        <p id="answerp">click on image if you know</p>
+        <p id="timer" class="timer_"></p>
+         
+     </div>   
+    </div>
+
+     <dir id="startdiv"><button id="startbtn"  >Start</button></dir>
+     
+    
+</body>
+
+   <script src="/scripts/home.js"></script>
+</html>

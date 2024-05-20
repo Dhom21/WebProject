@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+   
+  
+<body>
+
+     <div class="container">      
+     
+        <form action="/login" method="post">
+          <div class="form-group"><img src="/img/login/login-67.png" alt=""> </div>
+          
+          <div class="form-group">            
+            <input type="email"  name="email" required  placeholder="Email">            
+          </div>
+
+          <div class="form-group">           
+           <input type="password" id="login-password" name="password" required placeholder=" Password">
+          </div>
+          
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+          <div class="form-group">
+           <a href="/signup"> Dont' have account</a>
+           <p style="color: brown;">{{ message }}</p>
+          </div>              
+        </form>            
+      </div>
+            
+    </div>
+      
+     
+    
+</body>
+
+ 
+
+</html>
