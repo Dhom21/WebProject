@@ -2,6 +2,8 @@ this is the steps to make the code run
 
 # Notes-NodeJs-CRUD-MongoDB
 
+# Clone the repository
+git clone https://github.com/Dhom21/WebProject.git
 
 ## You need:
 - Database (MongoDB)
