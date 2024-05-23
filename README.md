@@ -10,17 +10,8 @@ git clone https://github.com/Dhom21/WebProject.git
 
 ## You need:
 - Database (MongoDB)
-- Google Console Account to create the API Auth Key's
-
-## Create .env file
-Create a .env file to store your credentials. Example below:
-
-```
-MONGODB_URI = mongodb+srv://<username>:<password>@mongodburlhere
-GOOGLE_CLIENT_ID= YOUR_GOOGLE_ID_HERE
-GOOGLE_CLIENT_SECRET= YOUR_GOOGLE_CLIENT_SECRET_HERE
-GOOGLE_CALLBACK_URL=http://localhost:5000/google/callback
-```
+- NodeJs
+- Preffered compiler
 
 ## Installation
 To install and run this project - install dependencies using npm and then start your server:
@@ -29,3 +20,9 @@ To install and run this project - install dependencies using npm and then start 
 $ npm install
 $ npm start
 ```
+# Instructions Step by Step
+1. Upload the images files to the mongoDb database.
+2. Connect to the MongoDB.
+3. Run the server.js file run it in NodeJS then it should write "connected... MongoDb connected.." in the debug console.
+4. Finally open in your preferred browser go to (http://localhost:3000/) and the website will work.
+
