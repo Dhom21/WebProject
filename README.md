@@ -2,9 +2,6 @@
 # Description
 The Picture Quiz Game is an interactive multiple-choice game where players select images as answers to questions. It aims to provide an engaging and educational experience for users of all ages.
 
-
-# Notes-NodeJs-CRUD-MongoDB
-
 # Clone the repository
 git clone https://github.com/Dhom21/WebProject.git
 
@@ -17,8 +14,7 @@ git clone https://github.com/Dhom21/WebProject.git
 To install and run this project - install dependencies using npm and then start your server:
 
 ```
-$ npm install
-$ npm start
+$ npm install MongoDb
 ```
 # Instructions Step by Step
 1. Upload the images files to the mongoDb database.
