@@ -1,4 +1,7 @@
-this is the steps to make the code run
+# Project Title: Picture Quiz Game
+# Description
+The Picture Quiz Game is an interactive multiple-choice game where players select images as answers to questions. It aims to provide an engaging and educational experience for users of all ages.
+
 
 # Notes-NodeJs-CRUD-MongoDB
 
