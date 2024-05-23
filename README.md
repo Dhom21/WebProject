@@ -17,8 +17,8 @@ To install and run this project - install dependencies using npm and then start 
 $ npm install MongoDb
 ```
 # Instructions Step by Step
-1. Upload the images files to the mongoDb database.
+1. Upload the images and answeres info to the mongoDb database.
 2. Connect to the MongoDB.
 3. Run the server.js file run it in NodeJS then it should write "connected... MongoDb connected.." in the debug console.
-4. Finally open in your preferred browser go to (http://localhost:3000/) and the website will work.
+4. Finally open in your preferred browser go to (http://localhost:3000/) and the website should will work.
 
