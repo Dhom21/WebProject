@@ -22,5 +22,5 @@ $ npm install MongoDb
 3. Run the server.js file in NodeJS then it should display "connected... MongoDb connected.." in the terminal console.
 4. Finally open in your preferred browser go to (http://localhost:3000/) and the website should work.
 
-#Documentation
+##Documentation
 To see the documentation of our project you can view the Documentation.docx.
